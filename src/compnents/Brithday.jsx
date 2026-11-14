@@ -214,7 +214,7 @@ useEffect(() => {
 
       {!loveBroken && (
         <p className="mt-12 animate-pulse text-[30px] font-bold tracking-widest text-pink-400">
-          HEART ক্লিক করো ❤️
+          CLICK THE HEART ❤️
         </p>
       )}
     </>
@@ -349,14 +349,14 @@ useEffect(() => {
     </div>
 
     <p className="mb-4 text-xs font-bold tracking-[0.2em] text-pink-400 sm:text-sm">
-      তোমার জন্য শেষ একটি শুভেচ্ছা
+      ONE LAST WISH FOR YOU
     </p>
 
     <h2 className="font-serif text-4xl font-black leading-tight text-[#e85d9e] sm:text-6xl lg:text-7xl">
-      শুভ জন্মদিন
-    <span className="mt-3 block whitespace-nowrap bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#9333ea] bg-clip-text px-2 pb-3 text-5xl leading-[1.4] text-transparent sm:text-7xl lg:text-8xl">
-      রিধান!
-    </span>
+      HAPPY BIRTHDAY
+      <span className="mt-3 block whitespace-nowrap bg-gradient-to-r from-[#f59e0b] via-[#ec4899] to-[#9333ea] bg-clip-text px-2 pb-3 text-5xl leading-[1.4] text-transparent sm:text-7xl lg:text-8xl">
+        RIDHAN!
+      </span>
     </h2>
 
     <div className="my-8 flex justify-center">
@@ -364,11 +364,11 @@ useEffect(() => {
     </div>
 
     <p className="mx-auto max-w-2xl text-base leading-8 text-[#987187] sm:text-xl sm:leading-10">
-      তোমার জীবন সবসময় আনন্দ আর ভালোবাসায় ভরে উঠুক।
-      তোমার প্রতিটি স্বপ্ন বাস্তবে রূপ নিক, আর মুখের হাসিটা
-      কখনো ম্লান না হোক। এভাবেই সবার মাঝে আনন্দ ছড়িয়ে
-      আলো ছড়াতে থেকো। পৃথিবীর সব সুন্দর জিনিস তোমার
-      জীবনে ধরা দিক!
+      May your life always be filled with happiness and love.
+      May every dream of yours come true, and may your beautiful
+      smile never fade. Keep spreading joy and lighting up the
+      world around you. You deserve all the beautiful things
+      life has to offer!
     </p>
 
     <div className="mt-10 text-4xl sm:text-5xl">
@@ -376,20 +376,20 @@ useEffect(() => {
     </div>
 
     <p className="mt-8 font-serif text-xl font-bold italic text-[#e85d9e] sm:text-2xl">
-      এই ছোট্ট আয়োজনটি তৈরি করেছি তোমার জন্য, অনেক অনেক ভালোবাসা দিয়ে।
+      This little surprise was created with endless love, just for you.
     </p>
 
     <button
       onClick={replaySurprise}
       className="mt-10 rounded-full bg-gradient-to-r from-[#ec4899] to-[#a855f7] px-9 py-4 text-sm font-bold tracking-wide text-white shadow-lg shadow-pink-300/40 transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-xl"
     >
-      ↻ আবার শুরু করো ❤️
+      ↻ REPLAY THE SURPRISE ❤️
     </button>
 
   </div>
 
   <p className="mt-10 animate-pulse text-sm tracking-widest text-pink-400">
-    শুধু তোমার জন্য, অনেক ভালোবাসায় ♡
+    MADE WITH LOVE, JUST FOR YOU ♡
   </p>
 
 </section>

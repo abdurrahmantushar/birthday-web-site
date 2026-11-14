@@ -122,7 +122,6 @@ useEffect(() => {
       </div>
     </div>
 
-    {/* Bottom Right Photo */}
     <div
       className="absolute bottom-8 right-3 z-10 w-24 animate-[float_6s_ease-in-out_infinite] sm:bottom-12 sm:right-12 sm:w-80"
       style={{ "--rotation": "12deg" }}
@@ -140,7 +139,6 @@ useEffect(() => {
       </div>
     </div>
 
-    {/* Main Content */}
     <div className="relative z-20 flex flex-col items-center px-5 text-center">
 
       <div className="mb-5 animate-pulse text-7xl drop-shadow-lg sm:text-8xl">
@@ -159,14 +157,23 @@ useEffect(() => {
         Something beautiful is waiting for you. Are you ready? 💖
       </p>
 
-      <button
-        onClick={handleStart}
-        className="group rounded-full border-2 border-white/70 bg-gradient-to-r from-pink-500 to-rose-500 px-8 py-4 text-base font-extrabold tracking-wide text-white shadow-[0_10px_35px_rgba(236,72,153,0.4)] transition duration-300 hover:-translate-y-1 hover:scale-105 hover:shadow-[0_15px_45px_rgba(236,72,153,0.6)] active:scale-95 sm:px-10 sm:text-lg"
-      >
-        <span className="transition group-hover:tracking-widest">
-          Tap to Start ❤️
-        </span>
-      </button>
+<button
+  onClick={handleStart}
+className="group relative mt-5 inline-flex min-h-[76px] items-center justify-center gap-4 overflow-hidden rounded-full border-[3px] border-white/90 bg-gradient-to-r from-pink-500 via-rose-500 to-purple-500 px-14 py-6 text-xl font-black tracking-widest text-white shadow-[0_12px_40px_rgba(236,72,153,0.5)] animate-bounce hover:scale-110 hover:shadow-[0_15px_55px_rgba(236,72,153,0.7)] active:scale-95 sm:min-h-[88px] sm:px-16 sm:text-2xl">
+  <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
+
+  <span className="relative text-4xl transition-transform duration-300 group-hover:rotate-12 group-hover:scale-125">
+    🎁
+  </span>
+
+  <span className="relative transition-all duration-300 group-hover:tracking-[0.2em]">
+    CLICK TO START
+  </span>
+
+  <span className="relative text-4xl transition-transform duration-300 group-hover:scale-125">
+    ❤️
+  </span>
+</button>
 
       <p className="mt-5 text-xs font-medium text-purple-700 sm:text-sm">
         Made with lots of love ✨
