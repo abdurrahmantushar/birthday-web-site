@@ -23,6 +23,18 @@ body {
     transform: scale(1);
   }
 }
+@keyframes birthdayFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-birthday-fade {
+  animation: birthdayFade 1s ease-in-out forwards;
+}
 
 @keyframes loveSplitLeft {
   0% {
