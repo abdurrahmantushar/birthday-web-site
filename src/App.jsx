@@ -82,7 +82,7 @@ function App() {
             muted={false}
             controls={false}
             onEnded={handleVideoEnd}
-            className={`h-full w-full object-contain scale-[1.15] transition-opacity duration-1000 ${startVideo ? "block" : "hidden"
+            className={`h-full w-full object-contain scale-[1.19] transition-opacity duration-1000 ${startVideo ? "block" : "hidden"
               } ${isTransitioning ? "opacity-0" : "opacity-100"}`}
           />
 
