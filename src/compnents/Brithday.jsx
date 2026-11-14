@@ -55,6 +55,23 @@ useEffect(() => {
   return () => observer.disconnect();
 }, []);
 
+useEffect(() => {
+  if (!showBirthdayMessage || !memoriesRef.current) return;
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setShowMemories(true);
+        observer.disconnect();
+      }
+    },
+    { threshold: 0.1 }
+  );
+
+  observer.observe(memoriesRef.current);
+
+  return () => observer.disconnect();
+}, [showBirthdayMessage]);
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#fff1f6] px-5 py-16">
@@ -254,7 +271,8 @@ useEffect(() => {
 
 </section>
 
-
+{showBirthdayMessage && (
+  <>
 <section
   ref={memoriesRef}
   className="relative z-10 mx-auto max-w-[1350px] py-16"
@@ -402,7 +420,8 @@ useEffect(() => {
       <footer className="relative z-10 py-8 text-center text-xs tracking-widest text-pink-300">
         MADE WITH LOVE ♡ FOREVER SPECIAL
       </footer>
-
+  </>
+)}
       <style>{`
         @keyframes fadeIn {
           from {
