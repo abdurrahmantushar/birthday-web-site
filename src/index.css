@@ -1,0 +1,161 @@
+
+@import "tailwindcss";
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.08);
+  }
+  30% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.13);
+  }
+  65% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loveSplitLeft {
+  0% {
+    transform: translateX(0) rotate(0) scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: translateX(-8%) rotate(-8deg) scale(1.08);
+  }
+  100% {
+    transform: translateX(-140%) rotate(-45deg) scale(0.75);
+    opacity: 0;
+  }
+}
+
+@keyframes loveSplitRight {
+  0% {
+    transform: translateX(0) rotate(0) scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: translateX(8%) rotate(8deg) scale(1.08);
+  }
+  100% {
+    transform: translateX(140%) rotate(45deg) scale(0.75);
+    opacity: 0;
+  }
+}
+
+@keyframes crackAppear {
+  0% {
+    opacity: 0;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes heartFlash {
+  0% {
+    opacity: 0;
+    box-shadow: 0 0 0 transparent;
+  }
+  40% {
+    opacity: 0.9;
+    box-shadow: 0 0 80px 30px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 0 transparent;
+  }
+}
+
+@keyframes heartParticle {
+  0% {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(var(--distance) * -1)) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes birthdayReveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.4) translateY(70px);
+    filter: blur(15px);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.06) translateY(-8px);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes birthday-reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.9);
+    filter: blur(12px);
+  }
+
+  60% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.animate-birthday-reveal {
+  animation: birthday-reveal 1.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.8s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px rgba(236, 72, 153, 0.5))
+          drop-shadow(0 0 35px rgba(168, 85, 247, 0.25));
+}
+
+.animate-love-left {
+  animation: loveSplitLeft 1s cubic-bezier(0.65, 0, 0.35, 1) 0.8s forwards;
+}
+
+.animate-love-right {
+  animation: loveSplitRight 1s cubic-bezier(0.65, 0, 0.35, 1) 0.8s forwards;
+}
+
+.animate-crack-appear {
+  animation: crackAppear 0.8s ease-out forwards;
+}
+
+.animate-heart-flash {
+  animation: heartFlash 0.5s ease-out forwards;
+}
+
+.animate-heart-particle {
+  animation: heartParticle 0.9s ease-out forwards;
+}
+
+.animate-birthday-reveal {
+  animation: birthdayReveal 1.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
